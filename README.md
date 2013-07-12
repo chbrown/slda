@@ -31,7 +31,7 @@ slda est <data path> <label path> <settings path> <alpha> <k> <initialization> <
 * `<data path>` should point to a single file containing your training data.
     - This should be a file where each line is of the form:
 
-          <M> <term_1>:<count> <term_2>:<count> ... <term_N>:<count>
+            <M> <term_1>:<count> <term_2>:<count> ... <term_N>:<count>
 
     - where `<M>` is the number of unique terms in the document, and the
       [count] associated with each term is how many times that term appeared
@@ -57,17 +57,17 @@ slda est <data path> <label path> <settings path> <alpha> <k> <initialization> <
         + `<iteration>.gamma`
     - Running the estimator on the [8-class image dataset](http://labelme.csail.mit.edu/) produces the output:
 
-          010.gamma
-          010.model
-          010.model.text
-          020.gamma
-          020.model
-          020.model.text
-          final.gamma
-          final.model
-          final.model.text
-          likelihood.dat
-          word-assignments.dat
+            010.gamma
+            010.model
+            010.model.text
+            020.gamma
+            020.model
+            020.model.text
+            final.gamma
+            final.model
+            final.model.text
+            likelihood.dat
+            word-assignments.dat
 
 Example usage:
 
@@ -105,6 +105,19 @@ This will also produce a final line of output, evaluating against the labels
 specified in the `<label path>` argument:
 
     average accuracy: 0.679
+
+
+## Sample data
+
+The sample data in [test/images](test/images) was downloaded from
+`http://www.cs.cmu.edu/~chongw/data/images.tgz` on July 12, 2013.
+
+### Description of data from [original site](http://www.cs.cmu.edu/~chongw/slda/):
+
+> A preprocessed 8-class image dataset from [Labelme](http://labelme.csail.mit.edu/).
+
+> UIUC Sports annotation files: [annotations](http://www.cs.cmu.edu/~chongw/data/uiuc-sports-annotations.txt) and [meta information](http://www.cs.cmu.edu/~chongw/data/uiuc-sports-info.txt). The source image files can be found [here](http://vision.stanford.edu/lijiali/event_dataset/).
+> (Note: there might be some discrepancies and I don't seem to know why...)
 
 
 ## License

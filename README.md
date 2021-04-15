@@ -1,5 +1,7 @@
 # Supervised Latent Dirichlet Allocation for Classification
 
+**Official repo:** https://github.com/blei-lab/class-slda
+
 This is a C++ implementation of supervised latent Dirichlet allocation (sLDA)
 for classification.
 
